@@ -1,4 +1,6 @@
-#copyright @Xiang Li
+#Copyright Xiang Li xiangl18@bu.edu
+#AI Module
+
 import random
 
 
@@ -15,11 +17,13 @@ class AiModule():
         try:
             while True:
                 for i, j, k in zip(bloodOxygen, bloodPressure, pulse):
-                    self.bo.append(i)
-                    self.bp.append(j)
-                    self.pulse.append(k)
-
-                print(self.bo)
+                    if (type(i) != float) or (type(j) != float) or (type(k) != float):
+                        raise AttributeError
+                    else:
+                        self.bo.append(i)
+                        self.bp.append(j)
+                        self.pulse.append(k)
+                
                 break
 
         except AttributeError:
@@ -39,7 +43,4 @@ class AiModule():
             predBloodOxygen += self.bo[i]/rand
             predBloodPressure += self.bp[i]/rand
             prePulse += self.pulse[i]/rand
-        #print('predicted blood oxygen is: ' + str(predBloodOxygen))
-        #print('predicted blood pressure is: ' + str(predBloodPressure))
-        #print('predicted pulse is: ' + str(prePulse))
         return predBloodOxygen, predBloodPressure, prePulse

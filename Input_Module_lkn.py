@@ -4,17 +4,14 @@ def read_data(path):
         with open(path,'r') as f:
             time = []
             value = []
-            data = f.readline().split()
+            data = f.readline()
             while data:
                 if data:
-                    time.append(data[0])
-                    value.append(float(data[1]))
-
-
+                    value.append(float(data))
                 else:
                     print("Empty data file!\n")
                     return 2
-                data = f.readline().split()
+                data = f.readline()
         print("Read data successfully\n")
         return value
     except:
