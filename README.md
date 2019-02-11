@@ -1,4 +1,6 @@
-# exercise-1-modularity-Shilu Wu
+# EC500
+
+## exercise-1-modularity-Shilu Wu
 
 ## Health Monitor System
 This system consists of Input module, storage module, AI module, Alert module and User Interface module.
