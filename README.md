@@ -4,4 +4,4 @@
 
 ## Health Monitor System
 This system consists of Input module, storage module, AI module, Alert module and User Interface module.
-Input module receives data from three txt docements. Storage module receives data from Input module.
+Input module receives data from three txt documents. Storage module receives data from Input module.
