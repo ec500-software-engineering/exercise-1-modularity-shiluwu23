@@ -38,5 +38,5 @@ while True:
 	for i in range(5):
 		t = threading.Thread(target = generate)
 		t.start()
-		time.sleep(random.randint(2,4))
+		time.sleep(2)
 
