@@ -8,5 +8,5 @@ Input module receives data from three txt documents. Storage module receives dat
 
 ## Architecture Diagram
 ![](https://github.com/ec500-software-engineering/exercise-1-modularity-shiluwu23/blob/master/Health_Monitor_system_diagram.png)
-### To start
+## To start
 Run the threading_main.py to start the multithreading task.
