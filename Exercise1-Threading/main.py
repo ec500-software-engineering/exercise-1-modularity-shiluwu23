@@ -1,4 +1,6 @@
-import Input_Module_lkn
+##Copyright Shilu Wu shiluwu@bu.edu
+
+import InputModule_lxc
 import storage
 import AiModule
 import Alert_Module_Xinsha
@@ -6,9 +8,9 @@ import UserInterface_module
 import threading
 
 def generate(a,b,c):
-	bloodoxy = Input_Module_lkn.read_data(a)
-	bloodpressure = Input_Module_lkn.read_data(b)
-	pulse = Input_Module_lkn.read_data(c)
+	bloodoxy = InputModule_lxc.readdata(a)
+	bloodpressure = InputModule_lxc.readdata(b)
+	pulse = InputModule_lxc.readdata(c)
 	database = []
 
 	for i in range(len(bloodoxy)):
